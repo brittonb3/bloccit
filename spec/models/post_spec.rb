@@ -76,4 +76,20 @@ describe "attributes" do
        end
      end
    end
+
+   describe "#create_vote" do
+     it "the post up_votes value is set at 1"do
+      expect(post.up_votes).to eq(1)
+      end
+
+      it "calls #create_vote when a post is created" do
+        post = topic.posts.new(title: RandomData.random_sentence, body: RandomData.random_paragraph, user: user)
+        expect(post).to receive(:create_vote)
+        post.save
+      end
+
+      it "vote should be connected to the owner of the post" do
+      expect(post.votes.first.user).to eq(post.user)
+      end
+   end
  end
