@@ -12,13 +12,13 @@
          <h2 class="media-heading"><%= @user.name %></h2>
          <small>
            <%= pluralize(@user.posts.count, 'post') %>,
-           <%= pluralize(@user.comments.count, 'comment') %>
+           <div class='js-comments-count'><%= pluralize(@user.comments.count, 'comment') %></div>
          </small>
        </div>
      </div>
    </div>
  </div>
- 
+
  <h2>Posts</h2>
  <%= render @user.posts %>
 
