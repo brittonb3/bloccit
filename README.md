@@ -1,33 +1,15 @@
-== README
-
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
+## Bloccit:
+  Bloccit is a Reddit replica that lets users post, comment and vote on bloccit content.
 
 Made with my mentor at [Bloc](http://bloc.io).
 
+## Made with
+* Ruby on Rails
+* AJAX
+* Bootstrap
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Bloccit Features
+* Users are albe to view public topics, posts, or comments.
+* Users can create an account and make private topics and posts.
+* Users can vote for posts they like and vote the posts up or down.
+* Users can use Markdown in their posts.
